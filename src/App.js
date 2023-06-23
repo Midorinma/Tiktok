@@ -1,10 +1,12 @@
-import logo from './logo.svg';
-import './App.css';
-
+import React from 'react';
+import Button from './components/Button';
 function App() {
-return(
-    <h1>Hello</h1>
-);
+    return(
+        <div>
+            <Button/>
+            <h1>Chào bạn</h1>
+        </div>
+    );
 }
 
 export default App;
