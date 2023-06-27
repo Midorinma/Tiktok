@@ -1,0 +1,19 @@
+@import 'normalize.css';
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@300;400;500;600;700&family=Poppins&family=Raleway:wght@100&family=Roboto:wght@300;500&display=swap');
+:root{
+    --primary:rgb(239, 42, 80);
+}
+
+html{
+    font-size: 62.5%;
+}
+
+*{
+    box-sizing: border-box;
+}
+
+body{
+    font-family: 'Roboto', sans-serif;
+    font-size: 1.6rem;
+    text-rendering: optimizeSpeed;
+}
