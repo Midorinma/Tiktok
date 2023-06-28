@@ -2,6 +2,9 @@
 @import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@300;400;500;600;700&family=Poppins&family=Raleway:wght@100&family=Roboto:wght@300;500&display=swap');
 :root{
     --primary:rgb(239, 42, 80);
+    //Default Layout
+    --default-layout-header-height:60px;
+    --default-layout-width:1150px;
 }
 
 html{
@@ -9,6 +12,8 @@ html{
 }
 
 *{
+    margin: 0;
+    padding: 0;
     box-sizing: border-box;
 }
 
