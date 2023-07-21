@@ -1,37 +1,113 @@
 @import 'normalize.css';
-@import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@300;400;500;600;700&family=Poppins&family=Raleway:wght@100&family=Roboto:wght@300;500&display=swap');
-:root{
-    --primary:rgb(239, 42, 80);
-    --black:rgb(0,0,0);
-    --text-color:#333;
+:root {
+    --primary: rgb(239, 42, 80);
+    --black: rgb(0, 0, 0);
+    --white: #fff;
+    --text-color: rgba(22, 24, 35, 1);
+    --font-family: TikTokFont, Arial;
     //Default Layout
-    --default-layout-header-height:60px;
-    --default-layout-width:1150px;
+    --default-layout-header-height: 60px;
+    --default-layout-width: 1150px;
+    --default-layout-horizontal-spacer: 24px;
 }
 
-html{
+html {
     font-size: 62.5%;
 }
 
-*{
+* {
     margin: 0;
     padding: 0;
     box-sizing: border-box;
 }
 
-body{
-    font-family: 'Roboto', sans-serif;
+body {
+    font-family: var(--font-family);
     font-size: 1.6rem;
     text-rendering: optimizeSpeed;
     color: var(--text-color);
+    overflow: overlay;
 }
 
-button, input, [tabindex]{
+//Scrollbar SCSS
+html *::-webkit-scrollbar {
+    border-radius: 0;
+    width: 8px;
+}
+
+html *::-webkit-scrollbar-thumb {
+    border-radius: 4px;
+    background-color: rgba(16, 17, 24, 0.03);
+}
+
+html *::-webkit-scrollbar-track {
+    border-radius: 0;
+    background-color: rgba(0, 0, 0, 0);
+}
+
+button,
+input,
+[tabindex] {
     outline: none;
     border: none;
 }
 
-a[href]{
+a {
     color: var(--text-color);
     text-decoration: none;
+}
+
+//Custom tippy tooltip
+body {
+    .tippy-box {
+        border-radius: 8px;
+        font-weight: 600;
+        font-size: 1.6rem;
+        line-height: 2.2rem;
+        background-color: rgba(84, 84, 84, 0.92);
+    }
+
+    .tippy-arrow {
+        color: rgba(84, 84, 84, 0.92);
+    }
+
+    .tippy-content {
+        padding: 8px 9px;
+    }
+
+    .tippy-box[data-placement^='bottom'] > .tippy-arrow::before {
+        top: -8px;
+    }
+}
+
+//Fonts
+
+@font-face {
+    font-family: TikTokFont, Arial, Tahoma, PingFangSC, sans-serif;
+    src: url('/assets/Fonts/TikTokDisplayFont-Regular.woff2');
+    font-weight: 400;
+}
+
+@font-face {
+    font-family: TikTokFont;
+    src: url('/assets/Fonts/TikTokFont-Regular.woff2');
+    font-weight: 400;
+}
+
+@font-face {
+    font-family: TikTokFont;
+    src: url('/assets/Fonts/TikTokFont-Semibold.woff2');
+    font-weight: 600;
+}
+
+@font-face {
+    font-family: TikTokFont;
+    src: url('/assets/Fonts/TikTokFont-Bold.woff2');
+    font-weight: 700;
+}
+
+@font-face {
+    font-family: TikTokFont, Arial, Tahoma, PingFangSC, sans-serif;
+    src: url('/assets/Fonts/TikTokDisplayFont-Bold.woff2');
+    font-weight: 700;
 }
