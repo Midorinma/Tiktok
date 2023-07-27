@@ -16,7 +16,7 @@ function AccountPreview() {
                     alt=""
                 />
 
-                <Button primary>Follow</Button>
+                <Button className={cx('follow-btn')} primary>Follow</Button>
             </div>
             <div className={cx('body')}>
                 <p className={cx('nickname')}>

@@ -132,8 +132,7 @@ function Header() {
                     <Menu items={currentUser ? userMenu : MENU_ITEMS} onChange={handleMenuChange}>
                         {currentUser ? (
                             <Image
-                                src=""
-                                //src="https://p16-sign-va.tiktokcdn.com/tos-maliva-avt-0068/0a43d55f09ffd86f79a11b13d59a4048~c5_100x100.jpeg?x-expires=1688871600&x-signature=SyM5QTrBJBef2Ij8JprN%2B3SBREc%3D"
+                                src="https://p16-sign-va.tiktokcdn.com/tos-maliva-avt-0068/0a43d55f09ffd86f79a11b13d59a4048~c5_100x100.jpeg?x-expires=1688871600&x-signature=SyM5QTrBJBef2Ij8JprN%2B3SBREc%3D"
                                 className={cx('user-avatar')}
                                 alt="Nguyen Van A"
                                 //fallback="https://fullstack.edu.vn/static/media/f8-icon.18cd71cfcfa33566a22b.png"
